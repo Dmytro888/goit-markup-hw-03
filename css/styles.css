@@ -35,8 +35,7 @@ body {
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -171,6 +170,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 /* =-=---------------------------features-------=--=-------------------------------- */
 
 .features-list {
@@ -287,10 +287,8 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio-list .porfolio-text,
-.portfolio-list .portfolio-title {
-  padding-left: 24px;
-  padding-right: 24px;
+.card-content {
+  padding: 20px 24px;
 }
 
 .portfolio-list .item {
@@ -311,11 +309,12 @@ body {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  border-top: 1px solid #ECECEC;
 }
 
 .portfolio-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin-top: 0;
+   margin-bottom: 4px;
   color: var(--title-text);
   font-weight: 700;
   font-size: 18px;
@@ -326,7 +325,6 @@ body {
 .porfolio-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -347,17 +345,19 @@ body {
 }
 
 .adress.link {
-  margin-top: 0;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 
-.contacts a {
-  margin-top: 9px;
-  color: rgba(255, 255, 255, 0.6);
+.footer a {
+   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
+.footer .item + .item {
+  margin-top: 9px;
+}
+
